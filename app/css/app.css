@@ -1,19 +1,17 @@
-#map {
-  height: 500px;
-  float: right;
-  width: 500px;
-  margin-right: 20px;
-}
-
 body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
+#map {
+  height: 250px;
+}
+
+
 .notice {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 0;
+  margin-right:10px;
 }
 
 .popup {
