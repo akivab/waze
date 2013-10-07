@@ -1,0 +1,27 @@
+<div class="info">
+  <div class="title"  ng-click="setSelected(notification)">
+    <a href="javascript:;" ng-click="center(notification)">
+      <span class="glyphicon glyphicon-map-marker"></span>
+    </a>
+    <span class="main">{{ notification.title }}</span> -
+    <span class="distance" ng-show="getDistance(notification)">{{ getDistance(notification) | number}} miles
+    </span>
+
+  </div>
+  <div class="more-info" ng-show="isSelected(notification)">
+    <div class="description">{{ notification.description }}</div>
+    <div class="muted">created {{ notification.created_at | date:'MMM d' }}. {{ notification.votes_up | number}} upvotes.</div>
+    <a ng-show="notification" href="javascript:;" ng-click="popupEdit(notification)">
+      <span class="glyphicon glyphicon-edit"></span> edit
+    </a>
+
+    <a ng-show="notification" href="javascript:;" ng-click="popupUpvote(notification)">
+      <span class="glyphicon glyphicon-thumbs-up"></span> upvote
+    </a>
+
+    <a ng-show="notification" href="javascript:;" ng-click="popupDelete(notification)">
+      <span class="glyphicon glyphicon-remove"></span> remove
+    </a>
+
+  </div>
+</div>

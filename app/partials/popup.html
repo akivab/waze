@@ -1,0 +1,18 @@
+<div ng-show="popup.show" class="popup">
+  <div class="background"></div>
+  <div class="frame">
+    <a href="javascript:;" ng-click="popup.show=false" class="close-button glyphicon glyphicon-remove"></a>
+    <div ng-show="showEditForm()" waze-edit></div>
+    <div class="popup-container" ng-show="showDeleteForm()">
+      <b> {{ popup.message }} </b><br>
+      <a href="javascript:;" ng-click="requestDelete(notification)">Confirm</a><br>
+      <a href="javascript:;" ng-click="popup.show=false">Cancel</a>
+    </div>
+    <div class="popup-container" ng-show="showUpvoteForm()">
+      <b> Upvoting {{ notification.title }} </b><br>
+      <a href="javascript:;" ng-click="requestUpvote(notification)">OK</a><br>
+      <a href="javascript:;" ng-click="popup.show=false">Cancel</a>
+    </div>
+    </div>
+  </div>
+</div>

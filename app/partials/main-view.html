@@ -1,0 +1,11 @@
+<div ng-include src='"partials/popup.html"'></div>
+
+<h1>Waze Map Notifications</h1>
+<div class="notice">{{ notice }}</div>
+
+<div id="map"></div>
+
+<div class="listings">
+<h3>Notifications (showing {{ getCount() }})</h3>
+<div waze-info ng-repeat="notification in notifications | filter:isVisible | orderBy:getDistance"></div>
+</div>

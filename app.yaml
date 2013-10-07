@@ -1,0 +1,29 @@
+application: g-waze
+version: 1
+runtime: python27
+threadsafe: false
+api_version: 1
+
+handlers:
+- url: /
+  static_files: app/index.html
+  upload: app/index.html
+
+- url: /partials
+  static_dir: app/partials
+
+- url: /css
+  static_dir: app/css
+
+- url: /js
+  static_dir: app/js
+
+- url: /img
+  static_dir: app/img
+
+- url: /lib
+  static_dir: app/lib
+
+- url: .*
+  script: main.app
+

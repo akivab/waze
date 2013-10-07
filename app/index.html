@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="Waze">
+<head>
+  <meta charset="utf-8">
+  <title>Waze Notifications</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+ <![endif]-->
+  <link rel="stylesheet" href="css/app.css"/>
+  <script src="http://leafletjs.com/dist/leaflet.js"></script>
+
+</head>
+<body>
+  <div class="main">
+    <div ng-view></div>
+  </div>
+
+  <!-- In production use: -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+  <!--
+  <script src="lib/angular/angular.js"></script>
+  -->
+  
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
