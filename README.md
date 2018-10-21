@@ -18,7 +18,7 @@ There are a couple tricky things with the Waze test-notifications server!
 
 ### Running unit tests
 
-Angular-seed recommend using [jasmine](http://pivotal.github.com/jasmine/) and
+Angular-seed recommend using [jasmine](https://jasmine.github.io/) and
 [Karma](http://karma-runner.github.io).
 
 Requires [node.js](http://nodejs.org/), Karma (`sudo npm install -g karma`) and a local
